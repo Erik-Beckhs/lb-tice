@@ -1,0 +1,32 @@
+{
+  "name": "unidad_educativa",
+  "plural": "unidades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "conductors": {
+      "type": "hasMany",
+      "model": "conductor",
+      "foreignKey": "id_ueducativa"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "antecedentes",
+  "plural": "antecedentess",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "caso": {
+      "type": "string"
+    },
+    "naturaleza": {
+      "type": "string"
+    },
+    "disposicion": {
+      "type": "string"
+    },
+    "id_conductor": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "conductor": {
+      "type": "belongsTo",
+      "model": "conductor",
+      "foreignKey": "id_conductor"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "asociacion",
+  "plural": "asociaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "conductors": {
+      "type": "hasMany",
+      "model": "conductor",
+      "foreignKey": "id_asociacion"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
