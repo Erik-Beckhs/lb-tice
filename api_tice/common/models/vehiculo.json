@@ -19,6 +19,9 @@
     "modelo": {
       "type": "string"
     },
+    "codigo": {
+      "type": "string"
+    },
     "cilindrada": {
       "type": "string"
     },
@@ -35,6 +38,9 @@
       "type": "string"
     },
     "tipo": {
+      "type": "string"
+    },
+    "img": {
       "type": "string"
     },
     "id_conductor": {

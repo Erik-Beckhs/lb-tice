@@ -15,22 +15,18 @@
       "required": true
     },
     "ci": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "nombres": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "apellidos": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "cat_licencia": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "nacionalidad": {
+    "expedicion": {
       "type": "string"
     },
     "fecha_nac": {

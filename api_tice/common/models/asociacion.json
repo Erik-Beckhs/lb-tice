@@ -13,6 +13,21 @@
     "nombre": {
       "type": "string",
       "required": true
+    },
+    "representante": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "fcreacion": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
     }
   },
   "validations": [],
