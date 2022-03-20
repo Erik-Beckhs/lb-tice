@@ -12,10 +12,15 @@
       "id": true
     },
     "nombre": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "img": {
       "type": "string"
     }
   },
