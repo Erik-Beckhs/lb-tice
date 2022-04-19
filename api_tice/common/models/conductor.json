@@ -70,7 +70,7 @@
     "vehiculos": {
       "type": "hasMany",
       "model": "vehiculo",
-      "foreignKey": "id_propietario"
+      "foreignKey": "id_conductor"
     }
   },
   "acls": [],
