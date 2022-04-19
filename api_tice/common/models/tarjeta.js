@@ -22,6 +22,7 @@ module.exports = function(Tarjeta) {
             http: { verb: 'get' },
             accepts: [
             ],
+            description:'Devuelve la cantidad de tarjetas registradas por mes de la gestion actual',
             returns: { arg: 'data', type: ['any'], root: true }
         }
     )

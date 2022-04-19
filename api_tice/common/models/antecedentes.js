@@ -1,10 +1,12 @@
 'use strict';
 
 module.exports = function(Antecedentes) {
-    Antecedentes.eliminaPorIdConductor = (idConductor, cb) => {
+    Antecedentes.eliminaPorIdConductor = (objeto, cb) => {
+        // console.log(idConductor);
+        // return;
         var ds = Antecedentes.dataSource;
         var sql = `
-        delete from antecedentes where id_conductor = ${idConductor};
+        delete from antecedentes where id_conductor = ${objeto.idConductor};
         `;
 
         ds.connector.query(sql, (err, instance) => {
@@ -17,8 +19,9 @@ module.exports = function(Antecedentes) {
     Antecedentes.remoteMethod(
         'eliminaPorIdConductor',
         {
-            http: { verb: 'delete', path:'/antecedenteConductor'},
-            accepts: { arg: 'idConductor', type: 'string' },
+            http: { verb: 'post', path:'/antecedenteConductor'},
+            //accepts: { arg: 'idConductor', type: 'string' },
+            accepts: [{ arg: 'objeto', type: "any", http: { source: "body" } }],
             returns: { arg: 'data', type: 'any', root: true },
             description:"Elimina los antecedentes correspondientes a un conductor"
         }

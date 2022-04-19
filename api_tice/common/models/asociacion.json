@@ -24,7 +24,7 @@
       "type": "string"
     },
     "fcreacion": {
-      "type": "string"
+      "type": "date"
     },
     "img": {
       "type": "string"
