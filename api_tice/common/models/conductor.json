@@ -29,6 +29,9 @@
     "expedicion": {
       "type": "string"
     },
+    "direccion": {
+      "type": "string"
+    },
     "fecha_nac": {
       "type": "date"
     },
@@ -36,6 +39,9 @@
       "type": "string"
     },
     "fotografia": {
+      "type": "string"
+    },
+    "licencia": {
       "type": "string"
     },
     "id_asociacion": {

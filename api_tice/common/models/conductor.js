@@ -5,7 +5,7 @@ module.exports = function(Conductor) {
     Conductor.ListadoDeConductores = (cb) => {
         var ds = Conductor.dataSource
         var sql = `
-        SELECT con.id id, concat(con.nombres, ' ',con.apellidos) nombre, con.ci ci, ue.nombre ueducativa, asoc.nombre sindicato, ve.placa placa, ve.tipo tipo, tar.fecha_inicio FROM conductor con left join unidad_educativa ue on con.id_ueducativa=ue.id left join asociacion asoc on con.id_asociacion = asoc.id left join vehiculo ve on ve.id_conductor = con.id left join tarjeta tar on tar.id_conductor = con.id
+        SELECT con.id id, concat(con.nombres, ' ',con.apellidos) nombre, con.ci ci, ue.nombre ueducativa, asoc.nombre sindicato, ve.placa placa, ve.tipo tipo FROM conductor con left join unidad_educativa ue on con.id_ueducativa=ue.id left join asociacion asoc on con.id_asociacion = asoc.id left join vehiculo ve on ve.id_conductor = con.id;
         `;
 
         ds.connector.query(sql, (err, instance) => {
