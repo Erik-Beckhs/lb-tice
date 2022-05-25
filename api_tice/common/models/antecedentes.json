@@ -19,6 +19,9 @@
     "disposicion": {
       "type": "string"
     },
+    "fecha": {
+      "type": "date"
+    },
     "id_conductor": {
       "type": "number"
     }

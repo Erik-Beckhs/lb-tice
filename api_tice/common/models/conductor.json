@@ -44,6 +44,9 @@
     "licencia": {
       "type": "string"
     },
+    "genero": {
+      "type": "number"
+    },
     "id_asociacion": {
       "type": "number"
     },
